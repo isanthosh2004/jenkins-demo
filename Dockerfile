@@ -1,5 +1,5 @@
-# Use an official Java runtime as the base image
-FROM openjdk:17-jdk-slim
+# Use Eclipse Temurin (official OpenJDK distribution)
+FROM eclipse-temurin:17-jdk-jammy
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -12,3 +12,4 @@ EXPOSE 8080
 
 # Run the Spring Boot app
 ENTRYPOINT ["java", "-jar", "app.jar"]
+
