@@ -1,10 +1,10 @@
-pipleline{
+pipleline {
     agent any
     stages{
         stage('checkout'){
             steps{
                 echo 'cloning repo....'
-                git branch: 'master', url: 'https://github.com/isanthosh2004/jenkins-demo'
+                git branch: 'master', url: 'https://github.com/isanthosh2004/jenkins-demo.git'
 
             }
         }
